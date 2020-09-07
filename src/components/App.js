@@ -31,7 +31,7 @@ export default class App extends Component {
       ? this.setState(prev => {
           return { ...prev, contacts: [...prev.contacts, contact] };
         })
-      : alert(`is already in contacts`);
+      : alert(`${contact.name} is already in contacts`);
   };
 
   getFilterName = event => {
